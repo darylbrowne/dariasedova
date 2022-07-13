@@ -55,7 +55,24 @@ footer p {
   margin-bottom: .25rem;
 }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }    	
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.image_wrap img {
+    width:100%;
+    height:100%;
+    transform:scale(1.2);
+    -webkit-animation: 1.2s slideImg linear infinite;
+    animation: 1.2s slideImg linear infinite;
+}
+
+@-webkit-keyframes slideImg {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+@keyframes slideImg {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}    	
     </style>
   <style id="__web-inspector-hide-shortcut-style__">
 .__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after
@@ -99,6 +116,7 @@ footer p {
     <main role="main">
 
       <section class="jumbotron text-center">
+      	<img src="https://02b7cf4.netsolhost.com/img/darias.jpg" />
         <div class="container">
           <h1 class="jumbotron-heading">Daria Sedova</h1>
           <p class="lead text-muted">Each piece you donate toward will be shipped to the mailing address you include in the notes. Frame and shipping costs are already included in the suggested donation amounts. All art ships from the US, and should arrive within 1 week of donation. If you would rather just donate without receiving any art, use the buttons below.</p>
