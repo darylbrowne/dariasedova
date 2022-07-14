@@ -7,6 +7,7 @@
     <title>Daria Sedova</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Bootstrap core CSS -->
     <style>
@@ -38,6 +39,7 @@
 
 .jumbotron-heading {
   font-weight: 300;
+  margin-top: 2rem;
 }
 
 .jumbotron .container {
@@ -125,7 +127,7 @@ footer p {
       	<img class="featurette" src="https://02b7cf4.netsolhost.com/img/darias.jpg" />
         <div class="container">
           <h1 class="jumbotron-heading">Daria Sedova</h1>
-          <p class="lead text-muted">Each piece you donate toward will be shipped to the mailing address you include in the notes. Frame and shipping costs are already included in the suggested donation amounts. All art ships from the US, and should arrive within 1 week of donation. If you would rather just donate without receiving any art, just hit 'Donate via PayPal' button below.</p>
+          <p class="lead text-muted">Each piece you donate toward will be shipped to the mailing address you include in the notes. Frame and shipping costs are already included in the suggested donation amounts. All art ships from the US, and should arrive within 2 weeks of donation. If you would rather just donate without receiving any art, just hit 'Donate via PayPal' button below.</p>
           <p>
             <a href="https://www.paypal.com/donate/?hosted_button_id=KTSSADKWZBM2J" class="btn btn-primary my-2">Donate via PayPal</a>
             <a href="#art" class="btn btn-secondary my-2">Donate via Art Purchase</a>
@@ -139,7 +141,7 @@ footer p {
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" alt="Abstraction 1 [16in x 16in]" src="https://02b7cf4.netsolhost.com/img/abstraction_1_t.jpg" style="height: 225px; width: 100%; display: block;">
+                <img class="card-img-top" alt="Abstraction 1 [16in x 16in]" src="https://02b7cf4.netsolhost.com/img/abstraction_1_t.jpg" style="height: 225px; width: 100%; display: block;cursor:zoom-in;" onclick="document.getElementById('modal01').style.display='block'">
                 <div class="card-body">
                   <p class="card-text"><em>Abstraction I</em> Batik, 16" x 16", framed</p>
                   <div class="d-flex justify-content-between align-items-center">
@@ -391,6 +393,13 @@ footer p {
         <p>©2022 DariaSedova.art </p>
       </div>
     </footer>
+
+	  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+	    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+	    <div class="w3-modal-content w3-animate-zoom">
+	      <img src="https://02b7cf4.netsolhost.com/img/still_t.jpg" style="width:100%">
+	    </div>
+	  </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
