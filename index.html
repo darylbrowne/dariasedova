@@ -132,20 +132,31 @@ footer p {
           <h1 class="jumbotron-heading">Daria Sedova</h1>
           <p class="lead text-muted">Each piece you donate toward will be shipped to the mailing address you include in the notes <em>(You will be refunded if the piece was purchased offline before we are able to update this site)</em>. Shipping costs are already included in the suggested donation amounts. All art ships from the US, and should arrive within 2 weeks of donation. If you would rather just donate without receiving any art, just use the 'Donate via PayPal' button below.</p>
           <p>
-            <button class="btn btn-primary my-2" data-toggle="modal" data-target=".bd-example-modal-sm">Donate via PayPal</button>
+            <button class="btn btn-primary my-2" data-toggle="modal" data-target="#exampleModal">Donate via PayPal</button>
             <a href="#art" class="btn btn-secondary my-2">Donate via Art Purchase</a>
           </p>
         </div>
       </section>
 
-<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
-      ...
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
   </div>
 </div>
-
       <div class="album py-5 bg-light" name="art" id="art">
         <div class="container">
 
